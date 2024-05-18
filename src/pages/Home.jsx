@@ -23,9 +23,9 @@ const styles = {
 };
 
 const Home = () => (
-  <Watermark gap={[50, 50]} content="Phonebook">
+  <Watermark gap={[50, 50]} content="yellow pages">
     <div style={styles.container}>
-      <h1 style={styles.title}>Home page of the Phonebook</h1>
+      <h1 style={styles.title}>Homework Eight React</h1>
       <p>
         <BiSolidEditAlt size="75" fill="#2b35c2" />
         <FcCellPhone size="75" />

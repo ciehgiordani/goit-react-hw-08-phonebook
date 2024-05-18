@@ -41,7 +41,7 @@ const ContactForm = () => {
     if (isNumberExist) {
       Notiflix.Report.warning(
         'Alert',
-        `Number ${contact.number} is already in contacts!`,
+        `Same number ${contact.number} already in contact list!`,
         'Ok'
       );
       return;
@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Text>Name</Text>
+      <Text>Handle Name</Text>
       <Input
         type="text"
         name="name"
@@ -70,11 +70,11 @@ const ContactForm = () => {
         value={name}
         onChange={handleNameChange}
         pattern="^[a-zA-Zа-яА-Я]+([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*$"
-        title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+        title="Handle Name field contains just letters"
         required
       />
 
-      <Text>Number</Text>
+      <Text>Phone Number</Text>
       <Input
         type="tel"
         name="number"
@@ -82,7 +82,7 @@ const ContactForm = () => {
         value={number}
         onChange={handleNumberChange}
         pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-        title="Phone number format could be: +1 555 1234567 or 555 1234567."
+        title="Number format should follow +1 234 5678901 or 123 4567890."
         required
       />
 

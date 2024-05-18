@@ -46,7 +46,7 @@ const RegisterForm = () => {
       onFinish={onFinish}
       size={'default'}
       initialValues={{
-        residence: ['zhejiang', 'hangzhou', 'xihu'],
+        residence: [],
         prefix: '86',
       }}
       style={{

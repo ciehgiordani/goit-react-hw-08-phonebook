@@ -63,7 +63,7 @@ function ContactItem({ contact }) {
         <EditIcon />
       </BtnEdit>
       <Popconfirm
-        title="Delete the contact"
+        title="Delete contact"
         description="Are you sure to delete this contact?"
         onConfirm={confirm}
         onCancel={cancel}
@@ -94,7 +94,7 @@ function ContactItem({ contact }) {
             value={newName}
             onChange={handleNameChange}
             pattern="^[a-zA-Zа-яА-Я]+([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            title="Handle name should only contain letters"
             required
           />
           <label>New Number:</label>
@@ -103,7 +103,7 @@ function ContactItem({ contact }) {
             value={newNumber}
             onChange={handleNumberChange}
             pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-            title="Phone number format could be: +1 555 1234567 or 555 1234567."
+            title="Number format should follow +1 234 5678901 or 123 4567890."
             required
           />
         </div>

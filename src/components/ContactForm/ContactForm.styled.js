@@ -7,8 +7,8 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  padding: 10px;
-  margin-bottom: 10px;
+  padding:12px;
+  margin-bottom: 12px;
   border-radius: 6px;
   border: none;
   outline: 0;
@@ -18,7 +18,7 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   > svg {
-    width: 40px;
+    width: 20px;
     height: 30px;
     fill: #02ba52;
   }

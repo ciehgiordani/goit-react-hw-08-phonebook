@@ -34,7 +34,7 @@ const LoginForm = () => {
         rules={[
           {
             required: true,
-            message: 'Please input your Email!',
+            message: 'No email inputted',
           },
         ]}
       >
@@ -48,7 +48,7 @@ const LoginForm = () => {
         rules={[
           {
             required: true,
-            message: 'Please input your Password!',
+            message: 'Type your Password!',
           },
         ]}
       >
